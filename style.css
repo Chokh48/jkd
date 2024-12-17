@@ -1,0 +1,483 @@
+/* ฟอนต์และพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, p {
+    font-family: 'Arial', sans-serif;
+}
+
+/* ส่วนของ Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
+}
+
+/* สไลด์โชว์ */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.slider-container {
+    display: flex;
+    width: 300%;
+}
+
+.slider-images img {
+    width: 33.33%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* เนื้อหากลาง */
+main {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* ฟุตเตอร์ */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ปรับรูปแบบของลิงก์และปุ่มต่าง ๆ */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/*index.php sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss*/
+
+
+
+/* ฟอนต์และพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #3498db;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ส่วนของฟอร์ม */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ฟอร์มและป้ายข้อความ */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* ฟอร์มเลือกไฟล์ */
+input[type="file"] {
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+input[type="file"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* ปุ่ม Submit */
+button {
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* ปุ่มกลับไปหน้าหลัก */
+.back-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-button .button {
+    background-color: #2ecc71;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.back-button .button:hover {
+    background-color: #27ae60;
+}
+
+/* ส่วน footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #888;
+}
+
+/*...........................................................................................................*/
+
+
+/* ฟอนต์และพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #3498db;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ส่วนของรายการสินค้า */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* กริดสินค้า */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.product-card .btn {
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .btn:hover {
+    background-color: #2980b9;
+}
+
+.product-card .btn.btn-buy {
+    background-color: #e74c3c;
+}
+
+.product-card .btn.btn-buy:hover {
+    background-color: #c0392b;
+}
+
+/* ส่วน footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #888;
+}
+/* สไตล์สำหรับรูปภาพ */
+.image-container {
+    text-align: center; /* จัดรูปให้กลาง */
+    margin: 20px 0; /* ช่องว่างด้านบนและล่าง */
+}
+
+.image-container img {
+    width: 100%; /* กำหนดให้รูปภาพยืดเต็มความกว้างของ container */
+    max-width: 600px; /* กำหนดขนาดสูงสุดของรูปภาพ */
+    height: auto; /* รักษาสัดส่วนของรูป */
+}
+
+.image-caption {
+    font-size: 16px; /* ขนาดตัวอักษรของคำอธิบาย */
+    margin-top: 10px; /* ช่องว่างด้านบนของคำอธิบาย */
+    color: #333; /* สีของข้อความ */
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.paper {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 20px;
+    margin: 20px auto;
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.confirmation {
+    text-align: center;
+    margin-top: 50px;
+}
+.confirmation a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.confirmation a:hover {
+    background-color: #0056b3;
+}
